@@ -27,9 +27,23 @@ html, body {
     text-align: center;
   }
 
-  #social hr {
+  #social hr, #who hr, #work hr {
     margin:8% auto;
   }
+
+  #who {
+    text-align: center;
+
+  }
+
+  #who img {
+    margin-top: 15%;
+  }
+
+  #work {
+    text-align: center;
+  }
+
 }
 
 .navbar {
@@ -122,4 +136,75 @@ input {
 
   color:white;
   background: #be2835;
+}
+
+/* Who Section */
+
+#who {
+  
+  padding:5rem 0;
+  background-color:#f6f6f6
+}
+
+#who .btn-who {
+
+  background-color: #be2835;
+  color:#fff;
+  width: 50%;
+}
+
+#who .btn-who:hover {
+
+  background-color: transparent;
+  border: 1px solid #be2835;
+  color:#be2835;
+}
+
+/* Work Section */
+
+#work {
+
+  padding: 5rem 0;
+}
+
+#work .work-img {
+
+  position:relative;
+}
+
+#work .work-img .img-overlay {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/eye.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#work .work-img .img-overlay:hover {
+
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Why */
+
+#why {
+
+  padding: 5rem 0;
+  background-color: #f6f6f6;
+
+}
+
+#why .fa {
+
+  color: #be2835;
+  padding: 15px 0;
 }
